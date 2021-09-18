@@ -44,7 +44,7 @@ const getUserList = async (ctx, next) => {
 	}
 }
 
-export default {
+module.exports =  {
 	'GET /user/getUserInfoById': getUserInfoById,
 	'POST /user/getUserList': getUserList
 }

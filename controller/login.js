@@ -1,3 +1,4 @@
+
 // 登录
 const login = async (ctx, next) => {
 	const { name, password } = ctx.request.body
@@ -23,7 +24,7 @@ const logout = async (ctx, next) => {
 	}
 }
 
-export default {
+module.exports = {
 	'POST /login': login,
 	'GET /logout': logout
 }
